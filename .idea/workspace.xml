@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58005fa1-5680-4109-99fe-edcf12f505d4" name="Default" comment="Updated and refactored functions to streamline process flow. Each function can now be tested independently.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DownloadPageTest/DownloadPageTest.java" />
+    <list default="true" id="58005fa1-5680-4109-99fe-edcf12f505d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ScrubBuoyData/com/company/DownloadPage.class" afterPath="$PROJECT_DIR$/out/production/ScrubBuoyData/com/company/DownloadPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScrubBuoyData.iml" afterPath="$PROJECT_DIR$/ScrubBuoyData.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out.txt" afterPath="$PROJECT_DIR$/out.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DownloadPage.java" afterPath="$PROJECT_DIR$/src/com/company/DownloadPage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -828,7 +824,7 @@
       <workItem from="1505677182188" duration="30215000" />
       <workItem from="1506184952269" duration="6922000" />
       <workItem from="1506375460170" duration="3852000" />
-      <workItem from="1506449807475" duration="1935000" />
+      <workItem from="1506449807475" duration="1984000" />
     </task>
     <task id="LOCAL-00001" summary="Updated and refactored functions to streamline process flow. Each function can now be tested independently.">
       <created>1506451504967</created>
@@ -837,11 +833,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506451504967</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated and refactored functions to streamline process flow. Each function can now be tested independently.">
+      <created>1506451776497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506451776497</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42924000" />
+    <option name="totallyTimeSpent" value="42973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2070" height="1174" extended-state="6" />

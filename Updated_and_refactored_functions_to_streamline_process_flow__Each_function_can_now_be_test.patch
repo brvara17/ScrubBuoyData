@@ -1,0 +1,869 @@
+Index: src/DownloadPageTest/DownloadPageTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/DownloadPageTest/DownloadPageTest.java	(revision )
++++ src/DownloadPageTest/DownloadPageTest.java	(revision )
+@@ -0,0 +1,14 @@
++package DownloadPageTest;
++
++import org.junit.jupiter.api.Test;
++
++/**
++ * Created by Projects on 9/25/2017.
++ */
++public class DownloadPageTest {
++
++    @Test
++    public void testSomething() {
++
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 784d8a5c6ee6515bfcfb7b737088cd77d8f57be2)
++++ .idea/workspace.xml	(revision )
+@@ -1,7 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="58005fa1-5680-4109-99fe-edcf12f505d4" name="Default" comment="" />
++    <list default="true" id="58005fa1-5680-4109-99fe-edcf12f505d4" name="Default" comment="">
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DownloadPageTest/DownloadPageTest.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ScrubBuoyData/com/company/DownloadPage.class" afterPath="$PROJECT_DIR$/out/production/ScrubBuoyData/com/company/DownloadPage.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScrubBuoyData.iml" afterPath="$PROJECT_DIR$/ScrubBuoyData.iml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out.txt" afterPath="$PROJECT_DIR$/out.txt" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DownloadPage.java" afterPath="$PROJECT_DIR$/src/com/company/DownloadPage.java" />
++    </list>
+     <ignored path="$PROJECT_DIR$/out/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="TRACKING_ENABLED" value="true" />
+@@ -24,15 +31,41 @@
+       <file leaf-file-name="DownloadPage.java" pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/src/com/company/DownloadPage.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="644">
+-              <caret line="120" column="22" lean-forward="true" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
++            <state relative-caret-position="384">
++              <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+               <folding>
+                 <element signature="imports" expanded="true" />
++                <element signature="method#GetWebsiteData#0;class#DownloadPage#0" expanded="false" />
++                <element signature="method#ScrubWebsiteData#0;class#DownloadPage#0" expanded="false" />
++                <element signature="method#ParseWebsiteData#0;class#DownloadPage#0" expanded="false" />
++                <element signature="method#FormatWebsiteData#0;class#DownloadPage#0" expanded="false" />
++                <element signature="method#ConnectToWebsite#0;class#DownloadPage#0" expanded="false" />
++                <element signature="method#DebugLogFile#0;class#DownloadPage#0" expanded="false" />
+               </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
++      <file leaf-file-name="URLConnection.java" pinned="false" current-in-tab="false">
++        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_111/src.zip!/java/net/URLConnection.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="8150">
++              <caret line="363" column="25" lean-forward="false" selection-start-line="363" selection-start-column="25" selection-end-line="363" selection-end-column="25" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="DownloadPageTest.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/DownloadPageTest/DownloadPageTest.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="225">
++              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
+     </leaf>
+   </component>
+   <component name="FileTemplateManagerImpl">
+@@ -42,6 +75,10 @@
+       </list>
+     </option>
+   </component>
++  <component name="Git.Settings">
++    <option name="ROOT_SYNC" value="DONT_SYNC" />
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="GradleLocalSettings">
+     <option name="externalProjectsViewState">
+       <projects_view />
+@@ -53,6 +90,7 @@
+         <option value="$PROJECT_DIR$/src/DownloadNewPage.java" />
+         <option value="$PROJECT_DIR$/src/DownloadPage.java" />
+         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
++        <option value="$PROJECT_DIR$/src/DownloadPageTest/DownloadPageTest.java" />
+         <option value="$PROJECT_DIR$/src/com/company/DownloadPage.java" />
+       </list>
+     </option>
+@@ -111,20 +149,40 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
++              <option name="myItemId" value="DownloadPageTest" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++          </PATH>
++          <PATH>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="ScrubBuoyData" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="ScrubBuoyData" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="src" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
+               <option name="myItemId" value="company" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+         </subPane>
+       </pane>
+-      <pane id="PackagesPane" />
+       <pane id="Scope" />
++      <pane id="PackagesPane" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="js.eslint.eslintPackage" value="" />
++    <property name="settings.editor.selected.configurable" value="vcs.Git" />
++    <property name="last_opened_file_path" value="D:/CS532/Jims-CS532-master/Jims-CS532-master/manage.py" />
+   </component>
+   <component name="RunManager" selected="Application.DownloadPage">
+     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
+@@ -315,6 +373,26 @@
+       <envs />
+       <method />
+     </configuration>
++    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="ScrubBuoyData" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="TARGET" value="" />
++      <option name="SETTINGS_FILE" value="" />
++      <option name="CUSTOM_SETTINGS" value="false" />
++      <option name="USE_OPTIONS" value="false" />
++      <option name="OPTIONS" value="" />
++      <method />
++    </configuration>
+     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+       <option name="BCName" value="" />
+       <option name="IOSSimulatorSdkPath" value="" />
+@@ -386,6 +464,7 @@
+       <setting name="passParentEnv" value="true" />
+       <setting name="launchBrowser" value="true" />
+       <setting name="launchBrowserUrl" value="" />
++      <setting name="depsClasspath" value="false" />
+       <method />
+     </configuration>
+     <configuration default="true" type="JUnit" factoryName="JUnit">
+@@ -467,6 +546,24 @@
+     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+       <method />
+     </configuration>
++    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="ScrubBuoyData" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <method />
++    </configuration>
+     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+       <module name="" />
+@@ -531,7 +628,26 @@
+       <listeners />
+       <method />
+     </configuration>
++    <configuration default="true" type="Tox" factoryName="Tox">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <module name="ScrubBuoyData" />
++      <method />
++    </configuration>
+     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
++      <node-interpreter>project</node-interpreter>
++      <node-options />
++      <gulpfile />
++      <tasks />
++      <arguments />
++      <envs />
+       <method />
+     </configuration>
+     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+@@ -560,6 +676,116 @@
+     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+       <method />
+     </configuration>
++    <configuration default="true" type="tests" factoryName="Attests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="ScrubBuoyData" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Doctests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="ScrubBuoyData" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Nosetests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="ScrubBuoyData" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <option name="PARAMS" value="" />
++      <option name="USE_PARAM" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Unittests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="ScrubBuoyData" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <option name="PUREUNITTEST" value="true" />
++      <option name="PARAMS" value="" />
++      <option name="USE_PARAM" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="py.test">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="ScrubBuoyData" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <option name="testToRun" value="" />
++      <option name="keywords" value="" />
++      <option name="params" value="" />
++      <option name="USE_PARAM" value="false" />
++      <option name="USE_KEYWORD" value="false" />
++      <method />
++    </configuration>
+     <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+       <module name="" />
+@@ -602,47 +828,82 @@
+       <option name="presentableId" value="Default" />
+       <updated>1505677177700</updated>
+       <workItem from="1505677182188" duration="30215000" />
++      <workItem from="1506184952269" duration="6922000" />
++      <workItem from="1506375460170" duration="3852000" />
++      <workItem from="1506449807475" duration="1497000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="30215000" />
++    <option name="totallyTimeSpent" value="42486000" />
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="-11" y="-11" width="2070" height="1174" extended-state="7" />
++    <frame x="-11" y="-11" width="2070" height="1174" extended-state="6" />
+     <editor active="false" />
+     <layout>
+-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997934" sideWeight="0.50202227" order="-1" side_tool="true" content_ui="tabs" />
+-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962587" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24974722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3284974" sideWeight="0.50202227" order="7" side_tool="true" content_ui="tabs" />
++      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3284974" sideWeight="0.49797776" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.4959555" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997934" sideWeight="0.49797776" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39585492" sideWeight="0.49191102" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962587" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
++      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+     </layout>
++    <layout-to-restore>
++      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39916405" sideWeight="0.50202227" order="7" side_tool="true" content_ui="tabs" />
++      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
++      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39585492" sideWeight="0.49797776" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
++      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
++      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962587" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2527806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
++      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++    </layout-to-restore>
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="processedProjectFiles" value="true" />
+@@ -652,7 +913,7 @@
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+-      <option name="time" value="4" />
++      <option name="time" value="18" />
+     </breakpoint-manager>
+     <watches-manager />
+   </component>
+@@ -661,47 +922,135 @@
+     <option name="FILTER_TARGETS" value="false" />
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/src/DownloadNewPage.java">
++    <entry file="file://$PROJECT_DIR$/src/com/company/DownloadPage.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="119">
+-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+-          <folding />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="method#GetWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ScrubWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ParseWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#FormatWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ConnectToWebsite#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#DebugLogFile#0;class#DownloadPage#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/DownloadPage.java">
++    <entry file="file://$PROJECT_DIR$/src/DownloadPageTest/DownloadPageTest.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="425">
+-          <caret line="17" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
++        <state relative-caret-position="225">
++          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
++    <entry file="file://$PROJECT_DIR$/src/com/company/DownloadPage.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="191">
+-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+-          <folding />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="method#GetWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ScrubWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ParseWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#FormatWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ConnectToWebsite#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#DebugLogFile#0;class#DownloadPage#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
++    <entry file="file://D:/CS532/squadmaster-master/squadmaster-master/app/__init__.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="200">
++          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/com/company/DownloadPage.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="0">
++          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="method#GetWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ScrubWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ParseWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#FormatWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ConnectToWebsite#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#DebugLogFile#0;class#DownloadPage#0" expanded="false" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/DownloadNewPage.java" />
++    <entry file="file://$PROJECT_DIR$/src/DownloadPage.java" />
++    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
+     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_111/src.zip!/java/lang/String.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="2156">
+           <caret line="2131" column="19" lean-forward="false" selection-start-line="2131" selection-start-column="19" selection-end-line="2131" selection-end-column="19" />
+-          <folding>
+-            <element signature="e#82971#82972#0" expanded="false" />
+-            <element signature="e#83020#83021#0" expanded="false" />
+-          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://D:/CS532/Jims-CS532-master/Jims-CS532-master/manage.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="0">
++          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://D:/CS532/Jims-CS532-master/Jims-CS532-master/fabfile.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="250">
++          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://D:/CS532/squadmaster-master/squadmaster-master/run.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="0">
++          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://D:/CS532/squadmaster-master/squadmaster-master/app/__init__.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="200">
++          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/DownloadPageTest/DownloadPageTest.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="225">
++          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_111/src.zip!/java/net/URLConnection.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="8150">
++          <caret line="363" column="25" lean-forward="false" selection-start-line="363" selection-start-column="25" selection-end-line="363" selection-end-column="25" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/com/company/DownloadPage.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="644">
+-          <caret line="120" column="22" lean-forward="true" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
++        <state relative-caret-position="384">
++          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+           <folding>
+             <element signature="imports" expanded="true" />
++            <element signature="method#GetWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ScrubWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ParseWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#FormatWebsiteData#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#ConnectToWebsite#0;class#DownloadPage#0" expanded="false" />
++            <element signature="method#DebugLogFile#0;class#DownloadPage#0" expanded="false" />
+           </folding>
+         </state>
+       </provider>
+Index: ScrubBuoyData.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ScrubBuoyData.iml	(revision 784d8a5c6ee6515bfcfb7b737088cd77d8f57be2)
++++ ScrubBuoyData.iml	(revision )
+@@ -7,6 +7,15 @@
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module-library">
++      <library name="JUnit5">
++        <CLASSES>
++          <root url="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0-M3.jar!/" />
++          <root url="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/opentest4j-1.0.0-M1.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
+   </component>
+-</module>
+-
++</module>
+\ No newline at end of file
+Index: out.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out.txt	(revision 784d8a5c6ee6515bfcfb7b737088cd77d8f57be2)
++++ out.txt	(revision )
+@@ -1,15 +1,15 @@
+-	Wave Height (WVHT):
+-	  3.6 ft
+-	Dominant Wave Period (DPD):
+-	  13 sec
+-	Average Period (APD):
+-	 6.0 sec
+-	Mean Wave Direction (MWD):
+-	 SW ( 232 deg true )
+-	Water Temperature (WTMP):
+-	 69.8 &deg;F
+-Significant Wave Height (WVHT):  3.6 ft
+-Swell Height (SwH):  2.0 ft
+-Swell Period (SwP): 12.5 sec 
+-Wind Wave Height (WWH):  3.0 ft
+-Average Wave Period (APD):  6.0 sec
++Wave Height (WVHT):  2.0 ft
++	  2.0 ft
++Dominant Wave Period (DPD):  12 sec
++	  12 sec
++Average Period (APD): 5.6 sec
++	 5.6 sec
++Mean Wave Direction (MWD):  S ( 188 deg true )
++	  S ( 188 deg true )
++Water Temperature (WTMP): 68.2 &deg;F
++	 68.2 &deg;F
++Significant Wave Height (WVHT):  2.0 ft
++Swell Height (SwH):  1.0 ft
++Swell Period (SwP): 11.8 sec 
++Wind Wave Height (WWH):  1.6 ft
++Average Wave Period (APD):  5.6 sec
+Index: src/com/company/DownloadPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/com/company/DownloadPage.java	(revision 784d8a5c6ee6515bfcfb7b737088cd77d8f57be2)
++++ src/com/company/DownloadPage.java	(revision )
+@@ -18,50 +18,37 @@
+         // Make a URL to the web page
+         URL url = new URL("http://www.ndbc.noaa.gov/station_page.php?station=46225");
+ 
+-        // Get the input stream through URL Connection
+-        URLConnection con = url.openConnection();
+-        InputStream is =con.getInputStream();
++        BufferedReader br = ConnectToWebsite(url);
+ 
+-        // Once you have the Input Stream, it's just plain old Java IO stuff.
+-
+-        // For this case, since you are interested in getting plain-text web page
+-        // I'll use a reader and output the text content to System.out.
+-
+-        // For binary content, it's better to directly read the bytes from stream and write
+-        // to the target file.
+-
+-
+-        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+-
+-        String line = null;
+         List <String> myList = new ArrayList();
+-        boolean lock = false;
++
+         // read each line and write to System.out
++        myList = GetWebsiteData(br, myList);
++
++        //Formatting website Data to uniform formatting
++        myList = FormatWebsiteData(myList);
++
++        //View data stored in myList at end of program call
++        DebugLogFile(myList);
++
++    }
++
++    public static List<String> GetWebsiteData(BufferedReader br, List<String> myList) throws IOException
++    {
++        String line;
++
+         while ((line = br.readLine()) != null) {
+-
+-            //TODO:  clean up ScrubWebsiteData
+-            if(ScrubWebsiteData(line, myList, lock))
+-            {
++            //Gets all website data needed from National Buoy Data Center
++            if (ScrubWebsiteData(line, myList)) {
++                //Save only relevant information from Website into array;
+                 myList = ParseWebsiteData(line, myList);
+             }
+ 
+-            //TODO: Write ParseWebsiteData to get only relevant information
+-
+         }
+-
+-        //myList = ParseWebsiteData(myList);
+-
+-        //FileWriter fw = new FileWriter("output_data.txt");
+-        PrintWriter pw = new PrintWriter(new FileWriter("out.txt"));
+-        for (int i = 0; i < myList.size(); i++) {
+-            //pw.write(myList.get(i));
+-            pw.println(myList.get(i));
+-        }
++        return myList;
++    }
+ 
+-        pw.close();
+-    }
+-
+-    public static boolean ScrubWebsiteData(String line, List <String> myList, boolean lock)
++    public static boolean ScrubWebsiteData(String line, List <String> myList)
+     {
+ 
+         //System.out.println(line);
+@@ -105,7 +92,7 @@
+         return false;
+     }
+ 
+-    public static List <String> ParseWebsiteData(String line, List<String> myList)
++    public static List<String> ParseWebsiteData(String line, List<String> myList)
+     {
+         line = line.replaceAll("<td>","");
+         line = line.replaceAll("</td>", "");
+@@ -121,4 +108,45 @@
+         return myList;
+     }
+ 
++    public static List<String> FormatWebsiteData(List<String> myList)
++    {
++        for (int i = 0; i < 9; i+=2) {
++            String tempLine = myList.get(i + 1);
++            String newLine = myList.get(i) + tempLine;
++            newLine = newLine.replaceAll("\t","");
++            myList.set(i,newLine);
++        }
++
++        //TODO: Remove elements in list that are irrelevant.
++
++        return myList;
++    }
++
++    public static BufferedReader ConnectToWebsite(URL url) throws IOException
++    {
++        BufferedReader br;
++        InputStream is;
++        URLConnection con;
++
++            con = url.openConnection();
++
++            is = con.getInputStream();
++
++
++            //BufferedReader br;
++            br = new BufferedReader(new InputStreamReader(is));
++
++        return br;
++    }
++
++    public static void DebugLogFile(List<String> myList) throws IOException
++    {
++        PrintWriter pw = new PrintWriter(new FileWriter("out.txt"));
++        for (int i = 0; i < myList.size(); i++) {
++            pw.println(myList.get(i));
++            System.out.println(myList.get(i));
++        }
++
++        pw.close();
++    }
+ }
+diff --git out/production/ScrubBuoyData/com/company/DownloadPage.class out/production/ScrubBuoyData/com/company/DownloadPage.class
+index cd9585decc9bcc172f400340d6ce18b18645d09d..da7643cbb46bcd5948bc0e4806eba69d6b1b6f1b
+GIT binary patch
+literal 4453
+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
+
