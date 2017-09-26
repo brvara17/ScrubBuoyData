@@ -18,50 +18,37 @@ public class DownloadPage {
         // Make a URL to the web page
         URL url = new URL("http://www.ndbc.noaa.gov/station_page.php?station=46225");
 
-        // Get the input stream through URL Connection
-        URLConnection con = url.openConnection();
-        InputStream is =con.getInputStream();
+        BufferedReader br = ConnectToWebsite(url);
 
-        // Once you have the Input Stream, it's just plain old Java IO stuff.
-
-        // For this case, since you are interested in getting plain-text web page
-        // I'll use a reader and output the text content to System.out.
-
-        // For binary content, it's better to directly read the bytes from stream and write
-        // to the target file.
-
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(is));
-
-        String line = null;
         List <String> myList = new ArrayList();
-        boolean lock = false;
-        // read each line and write to System.out
-        while ((line = br.readLine()) != null) {
 
-            //TODO:  clean up ScrubWebsiteData
-            if(ScrubWebsiteData(line, myList, lock))
-            {
+        // read each line and write to System.out
+        myList = GetWebsiteData(br, myList);
+
+        //Formatting website Data to uniform formatting
+        myList = FormatWebsiteData(myList);
+
+        //View data stored in myList at end of program call
+        DebugLogFile(myList);
+
+    }
+
+    public static List<String> GetWebsiteData(BufferedReader br, List<String> myList) throws IOException
+    {
+        String line;
+
+        while ((line = br.readLine()) != null) {
+            //Gets all website data needed from National Buoy Data Center
+            if (ScrubWebsiteData(line, myList)) {
+                //Save only relevant information from Website into array;
                 myList = ParseWebsiteData(line, myList);
             }
 
-            //TODO: Write ParseWebsiteData to get only relevant information
-
         }
-
-        //myList = ParseWebsiteData(myList);
-
-        //FileWriter fw = new FileWriter("output_data.txt");
-        PrintWriter pw = new PrintWriter(new FileWriter("out.txt"));
-        for (int i = 0; i < myList.size(); i++) {
-            //pw.write(myList.get(i));
-            pw.println(myList.get(i));
-        }
-
-        pw.close();
+        return myList;
     }
 
-    public static boolean ScrubWebsiteData(String line, List <String> myList, boolean lock)
+    public static boolean ScrubWebsiteData(String line, List <String> myList)
     {
 
         //System.out.println(line);
@@ -96,16 +83,12 @@ public class DownloadPage {
             //System.out.println(line + " 6");
             return true;
         }
-        if(line.contains("<td>Swell Period")) {
-            //myList.add(line);
-            //System.out.println(line + " 7");
-            return true;
-        }
 
-        return false;
+        return line.contains("<td>Swell Period");
+
     }
 
-    public static List <String> ParseWebsiteData(String line, List<String> myList)
+    public static List<String> ParseWebsiteData(String line, List<String> myList)
     {
         line = line.replaceAll("<td>","");
         line = line.replaceAll("</td>", "");
@@ -121,4 +104,45 @@ public class DownloadPage {
         return myList;
     }
 
+    public static List<String> FormatWebsiteData(List<String> myList)
+    {
+        for (int i = 0; i < 9; i+=2) {
+            String tempLine = myList.get(i + 1);
+            String newLine = myList.get(i) + tempLine;
+            newLine = newLine.replaceAll("\t","");
+            myList.set(i,newLine);
+        }
+
+        //TODO: Remove elements in list that are irrelevant.
+
+        return myList;
+    }
+
+    public static BufferedReader ConnectToWebsite(URL url) throws IOException
+    {
+        BufferedReader br;
+        InputStream is;
+        URLConnection con;
+
+            con = url.openConnection();
+
+            is = con.getInputStream();
+
+
+            //BufferedReader br;
+            br = new BufferedReader(new InputStreamReader(is));
+
+        return br;
+    }
+
+    public static void DebugLogFile(List<String> myList) throws IOException
+    {
+        PrintWriter pw = new PrintWriter(new FileWriter("out.txt"));
+        for (String aMyList : myList) {
+            pw.println(aMyList);
+            System.out.println(aMyList);
+        }
+
+        pw.close();
+    }
 }

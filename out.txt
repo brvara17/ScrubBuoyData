@@ -1,15 +1,15 @@
-	Wave Height (WVHT):
-	  3.6 ft
-	Dominant Wave Period (DPD):
-	  13 sec
-	Average Period (APD):
-	 6.0 sec
-	Mean Wave Direction (MWD):
-	 SW ( 232 deg true )
-	Water Temperature (WTMP):
-	 69.8 &deg;F
-Significant Wave Height (WVHT):  3.6 ft
-Swell Height (SwH):  2.0 ft
-Swell Period (SwP): 12.5 sec 
-Wind Wave Height (WWH):  3.0 ft
-Average Wave Period (APD):  6.0 sec
+Wave Height (WVHT):  2.0 ft
+	  2.0 ft
+Dominant Wave Period (DPD):  12 sec
+	  12 sec
+Average Period (APD): 5.6 sec
+	 5.6 sec
+Mean Wave Direction (MWD):  S ( 188 deg true )
+	  S ( 188 deg true )
+Water Temperature (WTMP): 68.2 &deg;F
+	 68.2 &deg;F
+Significant Wave Height (WVHT):  2.0 ft
+Swell Height (SwH):  1.0 ft
+Swell Period (SwP): 11.8 sec 
+Wind Wave Height (WWH):  1.6 ft
+Average Wave Period (APD):  5.6 sec
